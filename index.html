@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="container" id="calculator">
+        <div id="display">
+            <p></p>
+        </div>
+      <div class="row">
+        <div class="button-wrapper"><button id="1" class="button btn7" onclick="inputNum(7)">7</button></div>
+        <div class="button-wrapper"><button id="2" class="button btn6" onclick="inputNum(8)">8</button></div>
+        <div class="button-wrapper"><button id="3" class="button btn5" onclick="inputNum(9)">9</button></div>
+        <div class="button-wrapper"><button id="del" class="button btn-op" onclick="del()">DEL</button></div>
+      </div>
+      <div class="row">
+        <div class="button-wrapper"><button id="4" class="button" onclick="inputNum(4)">4</button></div>
+        <div class="button-wrapper"><button id="5" class="button" onclick="inputNum(5)">5</button></div>
+        <div class="button-wrapper"><button id="6" class="button" onclick="inputNum(6)">6</button></div>
+        <div class="button-wrapper"><button id="plus" class="button" onclick="add()">+</button></div>
+      </div>
+      <div class="row">
+        <div class="button-wrapper"><button class="button" onclick="inputNum(1)">1</button></div>
+        <div class="button-wrapper"><button class="button" onclick="inputNum(2)">2</button></div>
+        <div class="button-wrapper"><button class="button" onclick="inputNum(3)">3</button></div>
+        <div class="button-wrapper"><button class="button btn-op" onclick="minus()">-</button></div>
+      </div>
+      <div class="row">
+        <div class="button-wrapper btn0"><button class="button" onclick="inputNum(0)">0</button></div>
+        <div class="button-wrapper btn"><button class="button" onclick="inputNum(`.`)">.</button></div>
+        <div class="button-wrapper"><button class="button" onclick="divide()">/</button></div>
+        <div class="button-wrapper"><button class="button" onclick="multiply()">x</button></div>
+      </div>
+      <div class="row last-row">
+        <div class="button-wrapper"><button class="button" onclick="reset()">C</button></div>
+        <div class="button-wrapper"><button class="button" onclick="equal()">=</button></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
